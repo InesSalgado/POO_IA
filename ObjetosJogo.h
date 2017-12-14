@@ -29,7 +29,8 @@ public:
 
     void setEinicial(int ei);
     void setEatual(int ea);
-    Celula* getCelula();
+
+    virtual Celula* getCelula();
 
     void ligaCelula(Celula*cel);
 

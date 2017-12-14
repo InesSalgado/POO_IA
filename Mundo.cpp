@@ -30,3 +30,24 @@ void Mundo::draw(ostream os) {
     }
 
 }
+
+Celula* Mundo::getCelula(int x, int y) {
+    return Posicoes[x][y];
+}
+
+bool Mundo::celulaValida(int x, int y) {
+    if((x>0 && x<tamanho) && (y>0 && y<tamanho))
+        return true;
+    else
+        return false;
+}
+
+bool Mundo::celulaVazia(int x, int y) {
+    Celula* c = getCelula(x, y);
+    if(c->getObject()== nullptr)
+        return true;
+    else
+        return false;
+}
+
+

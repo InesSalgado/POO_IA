@@ -28,9 +28,13 @@ public:
     void setID(ObjetosJogo* ob);
     void setEnergiaInicialFormiga(int ei);
     void setEnergiaAtualFormiga(int ea);
-    void setPosicaoFormiga(Celula* c);
+
+    void setCelula(Celula* c);
+    virtual Celula* getCelula();
 
     virtual void Iteracao();
     virtual string getString();
-    int get
+
+    int getRaioMovimento();
+    void setRaioMovimento(int x);
 };

@@ -15,12 +15,16 @@ class Celula;
 
 class Mundo {
 protected:
-    vector<vector<Celula>> Posicoes;
+    vector<vector<Celula*>> Posicoes;
     int tamanho;
 public:
     Mundo();
 
     void draw(ostream os);
+    Celula* getCelula(int x, int y);
+
+    bool celulaValida(int x, int y);
+    bool celulaVazia(int x, int y);
 };
 
 
