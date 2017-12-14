@@ -8,7 +8,7 @@
 
 #include "Formiga.h"
 #include "ObjetosJogo.h"
-#include "Mundo.h"
+//#include "Mundo.h"
 
 class Mundo;
 

@@ -4,13 +4,14 @@
 #pragma once
 #include <vector>
 #include <iostream>
-using namespace std;
+
 #include "ObjetosJogo.h"
 #include "ComportamentoBase.h"
 #include "Ninho.h"
 
+using namespace std;
 
-class Formiga : public ObjetosJogo {
+class Formiga: public ObjetosJogo{
 private:
     static int contaFormiga;
     int ID_Formiga;
