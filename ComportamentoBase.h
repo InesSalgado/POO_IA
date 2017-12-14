@@ -1,0 +1,14 @@
+//
+// Created by Ines Salgado on 11/12/2017.
+//
+
+#ifndef TRABALHOPRATICOPOO_M1_COMPORTAMENTOBASE_H
+#define TRABALHOPRATICOPOO_M1_COMPORTAMENTOBASE_H
+
+
+class ComportamentoBase {
+
+};
+
+
+#endif //TRABALHOPRATICOPOO_M1_COMPORTAMENTOBASE_H
