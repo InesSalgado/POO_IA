@@ -32,4 +32,5 @@ public:
 
     virtual void Iteracao();
     virtual string getString();
+    int get
 };
