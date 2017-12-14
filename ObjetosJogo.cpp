@@ -23,3 +23,7 @@ void ObjetosJogo::ligaCelula(Celula *cel) {
 string ObjetosJogo::getString() {
     return std::__cxx11::string();
 }
+
+Celula* ObjetosJogo::getCelula() {
+    return C;
+}

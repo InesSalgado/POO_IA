@@ -25,6 +25,7 @@ char menuSimul(Mundo *pMundo) {
 }
 
 int main() {
+    srand(nullptr);
     cout<< "Simulacao da vida das formigas" << endl;
     cout<<"--------------------------------" <<endl<<endl;
     menuConfig();

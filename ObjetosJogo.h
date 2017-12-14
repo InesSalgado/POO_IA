@@ -22,14 +22,14 @@ protected:
     static int conta;
 public:
     ObjetosJogo();
-    virtual void Iteracao();
-    virtual string getString();
+    virtual void Iteracao() = 0;
+    virtual string getString() = 0;
 
     //metodos para alterar os atributos da classe ObjetosJogo
 
     void setEinicial(int ei);
     void setEatual(int ea);
-
+    Celula* getCelula();
 
     void ligaCelula(Celula*cel);
 

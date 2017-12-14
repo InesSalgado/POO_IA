@@ -14,6 +14,7 @@ class Formiga : public ObjetosJogo {
 private:
     static int contaFormiga;
     int ID_Formiga;
+    Celula *c;
 protected:
     int RaioVisao, RaioMovimento;
     Ninho* f;
@@ -31,5 +32,4 @@ public:
 
     virtual void Iteracao();
     virtual string getString();
-
 };
