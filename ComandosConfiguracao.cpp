@@ -48,26 +48,46 @@ void ComandosConfiguracao::defnm(int max) {
 }
 
 void ComandosConfiguracao::executa() {
-    cout<<"Comando executa"<<endl;
+    cout << "Comando executa" << endl;
+    Mundo *m = new Mundo();
     ifstream is;
-    is.open("C:\\Users\\Ines Salgado\\Dropbox\\Andreia_Ines\\POO\\ComandosConfiguracao");
-    if(!is){
-        cout << "Nao foi possivel abrir o ficheiro para configuracao automatica!" <<endl;
+    is.open("C:\\Users\\Ines Salgado\\Dropbox\\Andreia_Ines\\POO\\ComandosConfiguracao.txt");
+
+    if (!is) {
+        cout << "Nao foi possivel abrir o ficheiro para configuracao automatica!" << endl;
         return;
     }
     string comandoLido, linha;
     int valor;
-    for(int i=0; i<is.end; i++){
-        getline(is, linha);
-        do{
-            is >> comandoLido >> valor;
-        }while (!'\n');
+    cout << "Entrar no ciclo" << endl;
+    for (int i = 0; i < is.end; i++) {
+        cout << "ler linha" << endl;
+        //getline(is,linha);
+        getline(is, comandoLido);
+       do {
+            cout << "Do" << endl;
+            //getline(is, comandoLido);
+            if (comandoLido == "defmundo") {
+                cout << "***" << endl;
+                ComandosConfiguracao::defmundo(valor, m);
+                cout << "+++" << endl;
+            } else if (comandoLido == "defen") {
+                cout << "Comando defen lido" << endl;
+                ComandosConfiguracao::defen(valor);
+
+            } else if (comandoLido == "defpc") {
+                ComandosConfiguracao::defpc(valor);
+
+            } else if (comandoLido == "defvt") {
+                ComandosConfiguracao::defvt(valor);
+
+            }
+
+        }while (!is.end);
     }
 
 
     is.close();
-
-
 }
 
 void ComandosConfiguracao::inicio() {

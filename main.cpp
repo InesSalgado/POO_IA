@@ -29,10 +29,10 @@ int main() {
     srand(time(NULL));
     cout<< "Simulacao da vida das formigas" << endl;
     cout<<"--------------------------------" <<endl<<endl;
-    menuConfig();
+
 
     ComandosConfiguracao * Comandos = new ComandosConfiguracao();
-    Mundo * m = new Mundo();
+
 
     string Comando;
     int valor; //Variavel de configuracao introduzida pelo utilizador
@@ -44,6 +44,7 @@ int main() {
             break;
 
         case 'M':
+            Mundo * m = new Mundo();
             do {
                 cout << "Introduza o comando: ";
                 cin >> Comando;
