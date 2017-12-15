@@ -25,7 +25,7 @@ void ComandosConfiguracao::defen(int energia) {
 void ComandosConfiguracao::defpc(int valor) {
     cout<<"Comando defpc"<<endl;
     Ninho* n;
-    n->setEinicial(valor);
+    n->setEnergiaInicialNinho(valor);
 }
 
 void ComandosConfiguracao::defvt(int valor) {
