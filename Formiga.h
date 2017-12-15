@@ -7,15 +7,16 @@
 using namespace std;
 #include "ObjetosJogo.h"
 #include "ComportamentoBase.h"
-#include "Ninho.h"
 
 
-class Formiga : public ObjetosJogo {
+class ObjetosJogo;
+class Ninho;
+
+class Formiga : public ObjetosJogo{
 private:
     static int contaFormiga;
     int ID_Formiga;
     Celula *c;
-protected:
     int RaioVisao, RaioMovimento;
     Ninho* f;
     vector<ComportamentoBase*> Comportamento;
@@ -26,15 +27,22 @@ public:
     void UsarComportamentos();
 
     void setID(ObjetosJogo* ob);
+    void setRaioMovimento(int x);
+    void setRaioVisao(int x);
     void setEnergiaInicialFormiga(int ei);
     void setEnergiaAtualFormiga(int ea);
-
     void setCelula(Celula* c);
-    virtual Celula* getCelula();
+
+    Celula* getCelula();
+
+    virtual string getString();
+    int getRaioMovimento();
+    int getRaioVisao();
 
     virtual void Iteracao();
-    virtual string getString();
 
-    int getRaioMovimento();
-    void setRaioMovimento(int x);
+
+
+
+
 };

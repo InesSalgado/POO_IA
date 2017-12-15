@@ -5,9 +5,10 @@
 #ifndef TRABALHOPRATICOPOO_M1_COMPORTAMENTOMOVIMENTOALEATORIO_H
 #define TRABALHOPRATICOPOO_M1_COMPORTAMENTOMOVIMENTOALEATORIO_H
 
-
+#include "Formiga.h"
 #include "ComportamentoBase.h"
 
+class Formiga;
 class ComportamentoMovimentoAleatorio : public ComportamentoBase{
     void Accao(Formiga *F, Mundo *M);
 };

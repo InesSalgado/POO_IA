@@ -5,6 +5,8 @@
 #include "Celula.h"
 #include "Mundo.h"
 
+
+
 Celula::Celula() {}
 
 ObjetosJogo* Celula::getObject() {
@@ -24,11 +26,19 @@ int Celula::getPosY() const {
     return this->getPosY();
 }
 
-Celula *Celula::ProcuraCelulaPedida(int x, int y) {
-    for(int i=0; i<Mundo::tamanho; i++ ){
-        for(int j=0; i<Mundo::tamanho; i++){
+void Celula::setPosicaoY(int a) {
+    this->PosX=a;
+}
+
+void Celula::setPosicaoX(int a) {
+    this->PosY=a;
+}
+
+/* Celula *Celula::ProcuraCelulaPedida(int x, int y) {
+    for(int i=0; i<; i++ ){
+        for(int j=0; i<; i++){
             if(i==x && j==y){}
 
         }
     }
-}
+}*/

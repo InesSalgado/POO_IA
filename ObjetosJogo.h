@@ -6,7 +6,7 @@
 #define TRABALHOPRATICOPOO_M1_OBJETOSJOGO_H
 
 #include <iostream>
-#include "Celula.h"
+
 
 using namespace std;
 class Celula;
@@ -14,7 +14,6 @@ class Celula;
 class ObjetosJogo{
 //Formigas, ninhos, migalhas
 
-protected:
     Celula *C;
     int EInit;
     int EAtual;
@@ -33,6 +32,10 @@ public:
     virtual Celula* getCelula();
 
     void ligaCelula(Celula*cel);
+
+    int getIDObjeto();
+    int getEnergiaInicialObjeto();
+    int getEnergiaAtualObjeto();
 
 
 

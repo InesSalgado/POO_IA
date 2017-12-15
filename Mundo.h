@@ -5,23 +5,24 @@
 #ifndef TRABALHOPRATICOPOO_M1_MUNDO_H
 #define TRABALHOPRATICOPOO_M1_MUNDO_H
 
+#include "Celula.h"
 #include <vector>
 
-#include "Celula.h"
 
 using namespace std;
 
-class Celula;
 
-class Mundo {
-protected:
-    vector<vector<Celula*>> Posicoes;
+class Mundo{
+    vector<vector<Celula*>>Posicoes;
     int tamanho;
 public:
     Mundo();
+    ~Mundo();
 
-    void draw(ostream os);
+    void draw();
     Celula* getCelula(int x, int y);
+
+    int getTamanho();
 
     bool celulaValida(int x, int y);
     bool celulaVazia(int x, int y);

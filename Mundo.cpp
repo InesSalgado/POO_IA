@@ -6,27 +6,27 @@
 #include "Consola.h"
 
 
-Mundo::Mundo() {}
+Mundo::Mundo(){}
 
-void Mundo::draw(ostream os) {
+void Mundo::draw() {
     Consola::clrscr();
 
-    os << "o";
+    cout << "o";
     for(int i = 0; i < this->tamanho*2-1;++i ){
-        os << "-";
+        cout << "-";
     }
-    os << "o\n";
+    cout << "o\n";
 
     for(int i = 0; i < this->tamanho;++i){
         for(int j = 0; j < this-> tamanho;++j){
-            os << "|";
-            os << this->Posicoes.at(i).at(j).getObject().getString();
+            cout << "|";
+            cout << this->Posicoes.at(i).at(j)->getObject()->getString();
         }
-        os << "|\n";
+        cout << "|\n";
         for(int j = 0;j < this -> tamanho; ++j){// linha
-            os << "--";
+            cout << "--";
         }
-        os << "\n";
+        cout << "\n";
     }
 
 }
@@ -48,6 +48,10 @@ bool Mundo::celulaVazia(int x, int y) {
         return true;
     else
         return false;
+}
+
+int Mundo::getTamanho() {
+    return this->tamanho;
 }
 
 

@@ -25,5 +25,17 @@ string ObjetosJogo::getString() {
 }
 
 Celula* ObjetosJogo::getCelula() {
-    return C;
+    return this->C;
+}
+
+int ObjetosJogo::getIDObjeto() {
+    return this->ID;
+}
+
+int ObjetosJogo::getEnergiaAtualObjeto() {
+    return this->EInit;
+}
+
+int ObjetosJogo::getEnergiaInicialObjeto() {
+    return this->EAtual;
 }

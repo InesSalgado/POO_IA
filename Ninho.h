@@ -8,12 +8,15 @@ using namespace std;
 #include "ObjetosJogo.h"
 #include "Formiga.h"
 
+class ObjetosJogo;
+
 class Ninho : public ObjetosJogo {
     int ID_Ninho;
     int contaNinhos=0;
     int percentagemCriarFormiga;
 
-    double valorCriar=percentagemCriarFormiga*EInit;
+    double valorCriar=percentagemCriarFormiga*getEnergiaInicialObjeto();
+
     vector<Formiga*> Formigas;
             //Verificar como é que a formiga pertence ao ninho!
 public:

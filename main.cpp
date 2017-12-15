@@ -2,6 +2,7 @@
 // Created by Ines Salgado, Andreia Lopes
 //
 
+#include <time.h>
 #include "main.h"
 
 char menuConfig() {
@@ -16,7 +17,7 @@ char menuConfig() {
 }
 
 char menuSimul(Mundo *pMundo) {
-    pMundo->draw(cout);
+    pMundo->draw();
     char comando;
     cout << "Bem-vindo(a) a Simulacao" <<endl<<endl;
     cout << "Introduza um comando";
@@ -25,7 +26,7 @@ char menuSimul(Mundo *pMundo) {
 }
 
 int main() {
-    srand(nullptr);
+    srand(time(NULL));
     cout<< "Simulacao da vida das formigas" << endl;
     cout<<"--------------------------------" <<endl<<endl;
     menuConfig();

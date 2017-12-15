@@ -6,29 +6,27 @@
 #define TRABALHOPRATICOPOO_M1_CELULA_H
 
 
-#include "Formiga.h"
 #include "ObjetosJogo.h"
-#include "Mundo.h"
+#include <iostream>
+using namespace std;
 
-class Mundo;
-
-class Celula: public Mundo {
+class Celula{
 private:
     ObjetosJogo *objetoCelula;
     int PosX;
     int PosY;
 public:
     Celula();
-    ObjetosJogo* getObject();
     Celula* ProcuraCelulaPedida(int x, int y);
+
+    ObjetosJogo* getObject();
     void setObjecto(ObjetosJogo* oj);
-
-
-    void setPosX(int x);
-    void setPosY(int y);
 
     int getPosX()const;
     int getPosY()const;
+
+    void setPosicaoX(int a);
+    void setPosicaoY(int a);
 
 };
 

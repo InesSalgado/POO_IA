@@ -21,8 +21,8 @@ void Ninho::setEnergiaAtualNinho(int ea) {
 }
 
 void Ninho::setPosicao(Celula* c, int x, int y) {
-    this->C = c;
-    c->setObjecto(this);
+    c->setPosicaoX(x);
+    c->setPosicaoY(y);
 }
 
 Formiga Ninho::criarF() {
@@ -40,14 +40,18 @@ string Ninho::getString() {
 }
 
 void Ninho::setID(ObjetosJogo *ob) {
-    this->ID_Ninho=ob->ID;
+    this->ID_Ninho=ob->getIDObjeto();
 }
 
 bool Ninho::verificaEnergiaNinho() {
-    if(this->EAtual>valorCriar && Ninho::verificaFormigasNinho()==0) {
+    if(this->getEnergiaAtualObjeto()>valorCriar && Ninho::verificaFormigasNinho()==0) {
         return 1;
     }else
         return 0;
+}
+
+bool Ninho::verificaFormigasNinho() {
+    return false;
 }
 
 
