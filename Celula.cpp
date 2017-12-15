@@ -32,12 +32,3 @@ int Celula::getPosX() {
 int Celula::getPosY() {
     return this->PosY;
 }
-
-//Celula *Celula::ProcuraCelulaPedida(int x, int y) {
-//    for (int i = 0; i <; i++) {
-//        for (int j = 0; i <; i++) {
-//            if (i == x && j == y) {}
-//
-//        }
-//    }
-//}

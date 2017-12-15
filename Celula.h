@@ -20,7 +20,7 @@ private:
 public:
     Celula();
     ObjetosJogo* getObject();
-    //Celula* ProcuraCelulaPedida(int x, int y);
+
     void setObjecto(ObjetosJogo* oj);
 
     int getPosX();
