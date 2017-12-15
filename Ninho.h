@@ -17,11 +17,11 @@ class Ninho : public ObjetosJogo {
     int ID_Ninho;
     int contaNinhos=0;
     int percentagemCriarFormiga;
-
     double valorCriar=percentagemCriarFormiga*getEnergiaInicialObjeto();
+    int valorEnergiaEntreNinhoEFormiga;
 
     vector<Formiga*> Formigas;
-            //Verificar como é que a formiga pertence ao ninho!
+
 public:
     //Formiga criarF();
     //Formiga AddFormiga(Formiga*f);
@@ -31,9 +31,11 @@ public:
     void setPosicao(Celula* c, int x, int y);
     void setID(ObjetosJogo* ob);
     void setPercentagem(int n);
+    void setEnergiaEntreNinhoFormiga(int v);
 
     bool verificaEnergiaNinho();
     bool verificaFormigasNinho();
+
 
     Ninho();
     virtual~Ninho();

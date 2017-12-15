@@ -56,6 +56,10 @@ void Ninho::setPercentagem(int n) {
     this->percentagemCriarFormiga=n;
 }
 
+void Ninho::setEnergiaEntreNinhoFormiga(int v) {
+    this->valorEnergiaEntreNinhoEFormiga=v;
+}
+
 
 
 

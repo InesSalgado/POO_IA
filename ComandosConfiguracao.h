@@ -8,11 +8,13 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include "Mundo.h"
+
 using namespace std;
 
 class ComandosConfiguracao {
 public:
-    void defmundo(int limite);
+    void defmundo(int limite, Mundo*m);
     void defen(int energia);
     void defpc(int valor);
     void defvt(int valor);

@@ -2,6 +2,7 @@
 // Created by Ines Salgado on 11/12/2017.
 //
 #include <fstream>
+#include <cstring>
 #include "ComandosConfiguracao.h"
 #include "Mundo.h"
 #include "Ninho.h"
@@ -10,28 +11,29 @@ class Mundo;
 class Ninho;
 class Formiga;
 
-void ComandosConfiguracao::defmundo(int limite) {
+void ComandosConfiguracao::defmundo(int limite, Mundo*m) {
     cout<<"comando defmundo"<<endl;
-    Mundo* m = new Mundo();
     m->setTamanho(limite);
 }
 
 void ComandosConfiguracao::defen(int energia) {
     cout<<"comando defen"<<endl;
     Ninho* n;
-    n->setEinicial(energia);
+    n->setEnergiaInicialNinho(energia);
 }
 
 void ComandosConfiguracao::defpc(int valor) {
     cout<<"Comando defpc"<<endl;
     Ninho* n;
-    n->setEnergiaInicialNinho(valor);
+    n->setPercentagem(valor);
 }
 
 void ComandosConfiguracao::defvt(int valor) {
     cout<<"Comando defvt"<<endl;
+    Ninho* n;
+    n->setEnergiaEntreNinhoFormiga(valor);
 }
-
+//defmi, defme, defnm nao implementadas pois nao se consideram migalhas
 void ComandosConfiguracao::defmi(int percentagem) {
     cout<<"Comando defmi"<<endl;
 
@@ -69,5 +71,6 @@ void ComandosConfiguracao::executa() {
 }
 
 void ComandosConfiguracao::inicio() {
-    cout<<"Comando inicio"<<endl;
+    cout<<"Iniciar Simulacao"<<endl;
+
 }

@@ -48,37 +48,42 @@ int main() {
                 cout << "Introduza o comando: ";
                 cin >> Comando;
 
-                if(Comando.compare("defen")==1){
+                if(Comando=="defmundo"){
                     cout<<"Qual o limite? ";
+                    cin >> valor;
+                    Comandos->defmundo(valor, m);
+                }else if(Comando=="defen"){
+                    cout<<"Qual o valor da energia? ";
                     cin >> valor;
                     Comandos->defen(valor);
 
-                } else if(Comando.compare("defpc")==1){
+                } else if(Comando=="defpc"){
                     cout<<"Qual a energia? ";
                     cin >> valor;
                     Comandos->defen(valor);
 
-                } else if(Comando.compare("defvt")==1){
+                } else if(Comando=="defvt"){
                     cout<<"Qual o valor? ";
                     cin >> valor;
                     Comandos->defen(valor);
 
-                } else if(Comando.compare("defmi")==1){
+                } else if(Comando=="defmi"){
                     cout<<"Qual a percentagem? ";
                     cin >> valor;
                     Comandos->defen(valor);
 
-                } else if(Comando.compare("defme")==1){
+                } else if(Comando=="defme"){
                     cout<<"Qual ? ";
                     cin >> valor;
                     Comandos->defen(valor);
 
-                } else if(Comando.compare("defnm")==1){
+                } else if(Comando=="defnm"){
                     cout<<"Comando defnm"<<endl;
                 }
 
-            }while(Comando.compare("inicio")==0);
+            }while(Comando!="inicio");
 
+            m->draw();
             menuSimul(m);
     }
 
