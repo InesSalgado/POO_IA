@@ -34,6 +34,7 @@ void ComandosConfiguracao::defvt(int valor) {
 
 void ComandosConfiguracao::defmi(int percentagem) {
     cout<<"Comando defmi"<<endl;
+    
 }
 
 void ComandosConfiguracao::defme(int energia) {
