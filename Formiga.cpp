@@ -24,9 +24,9 @@ void Formiga::UsarComportamentos() {
 
 }
 
-//void Formiga::Iteracao() {
-//    ObjetosJogo::Iteracao();
-//}
+void Formiga::Iteracao() {
+
+}
 
 //SETS
 void Formiga::setCelula(Celula* C) {

@@ -27,6 +27,7 @@ public:
     void setEnergiaAtualNinho(int ea);
     void setPosicao(Celula* c, int x, int y);
     void setID(ObjetosJogo* ob);
+    void setPercentagem(int n);
 
     bool verificaEnergiaNinho();
     bool verificaFormigasNinho();

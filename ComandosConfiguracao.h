@@ -19,7 +19,7 @@ public:
     void defmi(int percentagem);
     void defme(int energia);
     void defnm(int max);
-    void executa(string Ficheiro);
+    void executa();
     void inicio();
 };
 

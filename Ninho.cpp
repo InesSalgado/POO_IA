@@ -54,6 +54,10 @@ bool Ninho::verificaFormigasNinho() {
     return false;
 }
 
+void Ninho::setPercentagem(int n) {
+    this->percentagemCriarFormiga=n;
+}
+
 
 
 

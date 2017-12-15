@@ -32,14 +32,15 @@ int main() {
     menuConfig();
 
     ComandosConfiguracao * Comandos = new ComandosConfiguracao();
-    Mundo* m = new Mundo();
+    Mundo * m = new Mundo();
+
     string Comando;
-    int valor; //Variavel introduzida pelo utilizador
+    int valor; //Variavel de configuracao introduzida pelo utilizador
 
 
     int opcao=menuConfig();
     switch (opcao) {
-        case 'A': Comandos->executa("ComandosConfiguracao.txt");
+        case 'A': Comandos->executa();
             break;
 
         case 'M':

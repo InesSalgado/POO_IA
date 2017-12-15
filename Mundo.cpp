@@ -54,4 +54,8 @@ int Mundo::getTamanho() {
     return this->tamanho;
 }
 
+void Mundo::setTamanho(int t) {
+    this->tamanho=t;
+}
+
 

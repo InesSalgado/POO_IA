@@ -23,6 +23,7 @@ public:
     Celula* getCelula(int x, int y);
 
     int getTamanho();
+    void setTamanho(int t);
 
     bool celulaValida(int x, int y);
     bool celulaVazia(int x, int y);
