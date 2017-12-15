@@ -4,6 +4,8 @@
 
 #include "Mundo.h"
 #include "Consola.h"
+#include "Celula.h"
+
 
 
 Mundo::Mundo(){}
@@ -57,5 +59,8 @@ int Mundo::getTamanho() {
 void Mundo::setTamanho(int t) {
     this->tamanho=t;
 }
+
+Mundo::~Mundo() {}
+
 
 

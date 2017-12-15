@@ -5,10 +5,13 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-#include "ObjetosJogo.h"
-#include "Formiga.h"
 
-class ObjetosJogo;
+#include "ObjetosJogo.h"
+
+
+
+class Formiga;
+
 
 class Ninho : public ObjetosJogo {
     int ID_Ninho;
@@ -20,8 +23,8 @@ class Ninho : public ObjetosJogo {
     vector<Formiga*> Formigas;
             //Verificar como é que a formiga pertence ao ninho!
 public:
-    Formiga criarF();
-    Formiga AddFormiga(Formiga*f);
+    //Formiga criarF();
+    //Formiga AddFormiga(Formiga*f);
 
     void setEnergiaInicialNinho(int ei);
     void setEnergiaAtualNinho(int ea);

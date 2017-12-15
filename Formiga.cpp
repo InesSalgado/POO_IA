@@ -29,9 +29,7 @@ void Formiga::Iteracao() {
 }
 
 //SETS
-void Formiga::setCelula(Celula* C) {
-    this->c=C;
-}
+
 void Formiga::setRaioMovimento(int x) {
     this->RaioMovimento=x;
 }
@@ -49,16 +47,16 @@ void Formiga::setEnergiaAtualFormiga(int ea) {
 
 //GETS
 
-int Formiga::getRaioVisao() {
-    return this->RaioVisao;
-}
-Celula* Formiga::getCelula() {
-    return this->c;
-}
+
+
 int Formiga::getRaioMovimento() {
     return this->RaioMovimento;
 }
 string Formiga::getString() {
     return "F";
+}
+
+int Formiga::getRaioVisao() {
+    return this->RaioVisao;
 }
 

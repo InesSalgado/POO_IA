@@ -17,7 +17,7 @@ void ObjetosJogo::setEatual(int ea) {
 }
 
 void ObjetosJogo::ligaCelula(Celula *cel) {
-    this->C=cel;
+    this->setCelula(cel);
 }
 
 string ObjetosJogo::getString() {
@@ -25,7 +25,7 @@ string ObjetosJogo::getString() {
 }
 
 Celula* ObjetosJogo::getCelula() {
-    return this->C;
+    return this->c;
 }
 
 int ObjetosJogo::getIDObjeto() {
@@ -38,4 +38,10 @@ int ObjetosJogo::getEnergiaAtualObjeto() {
 
 int ObjetosJogo::getEnergiaInicialObjeto() {
     return this->EAtual;
+}
+
+
+
+Celula *ObjetosJogo::setCelula(Celula * c) {
+    this->c=c;
 }

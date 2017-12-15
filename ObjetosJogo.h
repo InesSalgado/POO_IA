@@ -10,11 +10,12 @@
 
 using namespace std;
 class Celula;
+class Formiga;
 
 class ObjetosJogo{
 //Formigas, ninhos, migalhas
 
-    Celula *C;
+    Celula *c;
     int EInit;
     int EAtual;
     int ID;
@@ -29,12 +30,16 @@ public:
     void setEinicial(int ei);
     void setEatual(int ea);
 
+
     virtual Celula* getCelula();
+    virtual Celula* setCelula(Celula * c);
     void ligaCelula(Celula*cel); //atribui uma célula ao objeto de jogo
 
     int getIDObjeto();
     int getEnergiaInicialObjeto();
     int getEnergiaAtualObjeto();
+
+
 
 
 

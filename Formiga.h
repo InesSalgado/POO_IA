@@ -4,17 +4,16 @@
 #pragma once
 #include <vector>
 #include <iostream>
-
-#include "ObjetosJogo.h"
 #include "ComportamentoBase.h"
-#include "Ninho.h"
+#include "ObjetosJogo.h"
+
+class Ninho;
 
 
 class Formiga : public ObjetosJogo {
 private:
     static int contaFormiga;
     int ID_Formiga;
-    Celula *c;
 protected:
     int RaioVisao, RaioMovimento;
     Ninho* f;
@@ -31,12 +30,12 @@ public:
     void setEnergiaInicialFormiga(int ei);
     void setEnergiaAtualFormiga(int ea);
 
-    void setCelula(Celula* c);
-    virtual Celula* getCelula();
+
 
     virtual void Iteracao();
     virtual string getString();
 
     int getRaioMovimento();
-    void setRaioMovimento(int x);
+    int getRaioVisao();
+
 };

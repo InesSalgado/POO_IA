@@ -2,8 +2,8 @@
 // Created by Ines Salgado on 24/11/2017.
 //
 
+#include "Celula.h"
 #include "Ninho.h"
-
 
 
 Ninho::~Ninho() {}
@@ -21,19 +21,17 @@ void Ninho::setEnergiaAtualNinho(int ea) {
 }
 
 void Ninho::setPosicao(Celula* c, int x, int y) {
-    c->setPosicaoX(x);
-    c->setPosicaoY(y);
+
 }
 
-Formiga Ninho::criarF() {
-    Formiga* f = new Formiga();
-    this->AddFormiga(f);
-}
+//Formiga Ninho::criarF() {
+//    Formiga* f = new Formiga();
+//    Formigas.push_back(f);
+//}
 
-Formiga Ninho::AddFormiga(Formiga* f) {
-    Formigas.push_back(f);
-    f->ligaNinho(this);
-}
+//Formiga Ninho::AddFormiga(Formiga* f) {
+//    Formigas.push_back(f);
+//}
 
 string Ninho::getString() {
     return "N";

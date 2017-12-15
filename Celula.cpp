@@ -18,27 +18,26 @@ void Celula::setObjecto(ObjetosJogo *oj) {
 
 }
 
-int Celula::getPosX() const {
-    return this->getPosX();
+void Celula::setPosX(int x) {
+    this->PosY=x;
 }
 
-int Celula::getPosY() const {
-    return this->getPosY();
+void Celula::setPosY(int y) {
+    this->PosX=y;
 }
 
-void Celula::setPosicaoY(int a) {
-    this->PosX=a;
+int Celula::getPosX() {
+    return this->PosX;
+}
+int Celula::getPosY() {
+    return this->PosY;
 }
 
-void Celula::setPosicaoX(int a) {
-    this->PosY=a;
-}
-
-/* Celula *Celula::ProcuraCelulaPedida(int x, int y) {
-    for(int i=0; i<; i++ ){
-        for(int j=0; i<; i++){
-            if(i==x && j==y){}
-
-        }
-    }
-}*/
+//Celula *Celula::ProcuraCelulaPedida(int x, int y) {
+//    for (int i = 0; i <; i++) {
+//        for (int j = 0; i <; i++) {
+//            if (i == x && j == y) {}
+//
+//        }
+//    }
+//}

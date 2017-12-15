@@ -6,7 +6,7 @@
 #define TRABALHOPRATICOPOO_M1_CELULA_H
 
 
-#include "Formiga.h"
+
 #include "ObjetosJogo.h"
 #include "Mundo.h"
 
@@ -20,15 +20,14 @@ private:
 public:
     Celula();
     ObjetosJogo* getObject();
-    Celula* ProcuraCelulaPedida(int x, int y);
+    //Celula* ProcuraCelulaPedida(int x, int y);
     void setObjecto(ObjetosJogo* oj);
 
-
+    int getPosX();
     void setPosX(int x);
     void setPosY(int y);
+    int getPosY();
 
-    int getPosX()const;
-    int getPosY()const;
 
 };
 

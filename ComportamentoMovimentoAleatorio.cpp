@@ -3,6 +3,8 @@
 //
 
 #include "ComportamentoMovimentoAleatorio.h"
+#include "Celula.h"
+#include "Formiga.h"
 
 void ComportamentoMovimentoAleatorio::Accao(Formiga *F, Mundo *M) {
     Celula *posicaoAtual = F->getCelula();

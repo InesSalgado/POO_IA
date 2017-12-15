@@ -6,8 +6,6 @@
 #define TRABALHOPRATICOPOO_M1_COMPORTAMENTOBASE_H
 
 
-#include "Formiga.h"
-#include "Mundo.h"
 class Formiga;
 class Mundo;
 
