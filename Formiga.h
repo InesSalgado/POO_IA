@@ -4,19 +4,18 @@
 #pragma once
 #include <vector>
 #include <iostream>
-using namespace std;
+
 #include "ObjetosJogo.h"
 #include "ComportamentoBase.h"
+#include "Ninho.h"
 
 
-class ObjetosJogo;
-class Ninho;
-
-class Formiga : public ObjetosJogo{
+class Formiga : public ObjetosJogo {
 private:
     static int contaFormiga;
     int ID_Formiga;
     Celula *c;
+protected:
     int RaioVisao, RaioMovimento;
     Ninho* f;
     vector<ComportamentoBase*> Comportamento;
@@ -31,18 +30,13 @@ public:
     void setRaioVisao(int x);
     void setEnergiaInicialFormiga(int ei);
     void setEnergiaAtualFormiga(int ea);
+
     void setCelula(Celula* c);
-
-    Celula* getCelula();
-
-    virtual string getString();
-    int getRaioMovimento();
-    int getRaioVisao();
+    virtual Celula* getCelula();
 
     virtual void Iteracao();
+    virtual string getString();
 
-
-
-
-
+    int getRaioMovimento();
+    void setRaioMovimento(int x);
 };

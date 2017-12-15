@@ -6,12 +6,13 @@
 #define TRABALHOPRATICOPOO_M1_COMPORTAMENTOBASE_H
 
 
+#include "Formiga.h"
 #include "Mundo.h"
 class Formiga;
 class Mundo;
 
 class ComportamentoBase {
-    virtual void Accao(Formiga *f, Mundo*m)=0;
+    virtual void Accao(Formiga *, Mundo* )=0;
 };
 
 
