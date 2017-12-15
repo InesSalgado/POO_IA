@@ -31,8 +31,7 @@ public:
     void setEatual(int ea);
 
     virtual Celula* getCelula();
-
-    void ligaCelula(Celula*cel);
+    void ligaCelula(Celula*cel); //atribui uma célula ao objeto de jogo
 
 
 

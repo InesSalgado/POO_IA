@@ -8,6 +8,7 @@
 #include "ObjetosJogo.h"
 #include "ComportamentoBase.h"
 #include "Ninho.h"
+#include "Celula.h"
 
 using namespace std;
 
