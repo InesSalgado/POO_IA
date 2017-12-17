@@ -39,3 +39,7 @@ int ObjetosJogo::getEnergiaInicialObjeto() {
 Celula *ObjetosJogo::setCelula(Celula * c) {
     this->c=c;
 }
+
+void ObjetosJogo::Iteracao() {
+
+}

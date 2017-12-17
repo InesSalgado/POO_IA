@@ -59,15 +59,12 @@ void ComandosConfiguracao::executa() {
     }
     string comandoLido, linha;
     int valor;
-    cout << "Entrar no ciclo" << endl;
+
     for (int i = 0; i < is.end; i++) {
-        cout << "ler linha" << endl;
         getline(is, comandoLido);
        do {
             if (comandoLido == "defmundo") {
-                cout << "***" << endl;
                 ComandosConfiguracao::defmundo(valor, m);
-                cout << "+++" << endl;
             } else if (comandoLido == "defen") {
                 cout << "Comando defen lido" << endl;
                 ComandosConfiguracao::defen(valor);
