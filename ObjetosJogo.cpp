@@ -16,13 +16,7 @@ void ObjetosJogo::setEatual(int ea) {
     this->EAtual=ea;
 }
 
-void ObjetosJogo::ligaCelula(Celula *cel) {
-    this->setCelula(cel);
-}
-
-string ObjetosJogo::getString() {
-    return std::__cxx11::string();
-}
+string ObjetosJogo::getString() {}
 
 Celula* ObjetosJogo::getCelula() {
     return this->c;

@@ -62,11 +62,8 @@ void ComandosConfiguracao::executa() {
     cout << "Entrar no ciclo" << endl;
     for (int i = 0; i < is.end; i++) {
         cout << "ler linha" << endl;
-        //getline(is,linha);
         getline(is, comandoLido);
        do {
-            cout << "Do" << endl;
-            //getline(is, comandoLido);
             if (comandoLido == "defmundo") {
                 cout << "***" << endl;
                 ComandosConfiguracao::defmundo(valor, m);

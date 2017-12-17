@@ -22,10 +22,8 @@ class ObjetosJogo{
     static int conta;
 public:
     ObjetosJogo();
-    virtual void Iteracao() = 0;
-    virtual string getString() = 0;
-
-    //metodos para alterar os atributos da classe ObjetosJogo
+    virtual void Iteracao();
+    virtual string getString();
 
     void setEinicial(int ei);
     void setEatual(int ea);
@@ -33,7 +31,6 @@ public:
 
     virtual Celula* getCelula();
     virtual Celula* setCelula(Celula * c);
-    void ligaCelula(Celula*cel); //atribui uma célula ao objeto de jogo
 
     int getIDObjeto();
     int getEnergiaInicialObjeto();

@@ -10,7 +10,7 @@ class Formiga;
 class Mundo;
 
 class ComportamentoBase {
-    virtual void Accao(Formiga *, Mundo* )=0;
+    virtual void Accao(Formiga*, Mundo* );
 };
 
 
